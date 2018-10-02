@@ -2,7 +2,7 @@ var _config = require('../config.js')
 var _blocks = require('./blocks.js')
 var fs = require('fs')
 var writeObject = {}, functionObject = {}
-var blockOpenLocation
+// var blockOpenLocation
 var inFormat = {
     //actions and there respective working..
     output : {
@@ -170,7 +170,7 @@ function writeIntermediate() {
 function generateIntermediate() {
     var action = _config.getRequest().queryResult.action;
     var parameters = _config.getRequest().queryResult.parameters;
-    blockOpenLocation = __dirname +'/../programs/data/'+_config.getSession()+'function.json';
+    // blockOpenLocation = __dirname +'/../programs/data/'+_config.getSession()+'function.json';
     inFormat[action]._func(parameters)
     writeIntermediate();
 }

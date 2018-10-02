@@ -14,6 +14,7 @@ function main() {
             console.log("received nothing")
             return;
         }
+        console.log("i received..")
         //set the request object in configuration file if request is not empty
         _config.setRequest(req.body)
         //set the session id once the req in config is 
