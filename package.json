@@ -1,0 +1,15 @@
+{
+  "name": "modified",
+  "version": "1.0.0",
+  "description": "Backend of my major project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yawar Azad",
+  "license": "ISC",
+  "dependencies": {
+    "deasync": "^0.1.13",
+    "express": "^4.16.3"
+  }
+}

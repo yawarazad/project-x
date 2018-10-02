@@ -1,0 +1,21 @@
+{
+  "include__0.8882904226546569": "stdio.h",
+  "include__0.9572390356014242": "conio.h",
+  "functionDefine__main": {
+    "name": "main",
+    "returnType": "int",
+    "parameters": [],
+    "variableDeclare__0.1985853966188651": {
+      "type": "int",
+      "variableNames": [
+        "x"
+      ]
+    },
+    "variableDeclare__0.7739761417665394": {
+      "type": "int",
+      "variableNames": [
+        "y"
+      ]
+    }
+  }
+}
