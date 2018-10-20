@@ -11,7 +11,7 @@ function main() {
     return function(req, res) {
         //if request has problems
         if(req.body.session == undefined) {
-            console.log("received nothing")
+            // console.log("received nothing")
             return;
         }
         
