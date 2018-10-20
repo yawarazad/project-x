@@ -1,5 +1,6 @@
-var req,session, response, dataFileName, jsonFileName
+var req,session, response, dataFileName, jsonFileName,  cFileName
 var okayReturn = -1
+var cReturn = -1
 // response = {
 //     "fulfillmentText": "Instruction generated successfully",
 //     "fulfillmentMessages": [
@@ -93,4 +94,25 @@ function getJsonFileName() {
     return jsonFileName
 }
 
-module.exports = {setSession, setRequest, getSession, getRequest, response, setDataFileName, getDataFileName,okayReturn , setJsonFileName, getJsonFileName}
+function setCFileName(){
+    cFileName = "./backend/programs/c/"+session+".c"
+}
+
+function getCFileName(){
+    return cFileName
+}
+
+module.exports = {
+    setSession, 
+    setRequest, 
+    getSession, 
+    getRequest, 
+    response, 
+    setDataFileName, 
+    getDataFileName,
+    okayReturn , 
+    setJsonFileName, 
+    getJsonFileName,
+    setCFileName,
+    getCFileName
+}

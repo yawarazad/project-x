@@ -1,0 +1,25 @@
+{
+  "variableDeclare__0.5446521821304229": {
+    "type": "int",
+    "variableNames": [
+      "y"
+    ]
+  },
+  "variableDeclare__0.7633012311699954": {
+    "type": "int",
+    "variableNames": [
+      "p"
+    ]
+  },
+  "functionDefine__main": {
+    "name": "main",
+    "returnType": "void",
+    "parameters": [],
+    "variableDeclare__0.7781417019770476": {
+      "type": "int",
+      "variableNames": [
+        "p"
+      ]
+    }
+  }
+}

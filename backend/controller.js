@@ -14,7 +14,7 @@ function main() {
             console.log("received nothing")
             return;
         }
-        console.log("i received..")
+        
         //set the request object in configuration file if request is not empty
         _config.setRequest(req.body)
         //set the session id once the req in config is 
@@ -26,20 +26,20 @@ function main() {
         //Check For Errors
         //Debug Errors
 
+        while(_config.okayReturn!=0) {
+            require('deasync').runLoopOnce();
+        } 
+
         //Call Language Creator
         _c.main()
 
-        while(_config.okayReturn!=0) {
+        while(_config.cReturn!=0) {
             require('deasync').runLoopOnce();
-        }
+        } 
+
         //Give Back Ouput
         return res.json(_config.response)
     }
 }
 
 module.exports = {main}
-
-// return res.json({
-        //     displayText : `Display Text`,
-        //     speech : `Speech Text`
-        // })
